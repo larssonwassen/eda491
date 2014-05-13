@@ -14,10 +14,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Conclusion}{6}{section.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{7}{section*.8}
+\contentsline {section}{References}{7}{section*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A}Initial Firewall Configuration}{8}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {B}Final Configuration Script}{10}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {C}Answers to Assignment Questions}{11}{appendix.C}
+\contentsline {section}{\numberline {C}Answers to Assignment Questions}{12}{appendix.C}

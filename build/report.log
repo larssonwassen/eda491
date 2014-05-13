@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.11)  13 MAY 2014 16:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2013.2.11)  13 MAY 2014 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1369,8 +1369,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 (/nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/tex/l
 atex/biblatex/lbx/english.lbx
 File: english.lbx 2013/01/10 v2.5 biblatex localization (PK/JW/AB)
-)
-No file report.aux.
+) (build/report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
@@ -1419,6 +1418,7 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 133.
 LaTeX Info: Redefining \pageref on input line 133.
 LaTeX Info: Redefining \nameref on input line 133.
+ (build/report.out) (build/report.out)
 \@outlinefile=\write5
 \openout5 = `report.out'.
 
@@ -1463,8 +1463,8 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `report.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'report.bbl' not found.
-No file report.bbl.
+Package biblatex Info: ... file 'report.bbl' found.
+(build/report.bbl)
 Package biblatex Info: Reference section=0 on input line 133.
 Package biblatex Info: Reference segment=0 on input line 133.
 
@@ -1508,19 +1508,16 @@ Package caption Info: End \AtBeginDocument code.
 [-100
 
 {/nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-var/fonts/
-map/pdftex/updmap/pdftex.map}] [-99]
+map/pdftex/updmap/pdftex.map}] [-99] (build/report.toc)
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
  [1] [2
 
-] (./intro.tex
+]
+(./intro.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 10.
-
-
-LaTeX Warning: Reference `sec:setup' on page 1 undefined on input line 10.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
  
@@ -1545,14 +1542,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/tex/l
 atex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-
-LaTeX Warning: Citation 'latex-wikibook' on page 1 undefined on input line 13.
-
-) [1] (./setup.tex
-
-LaTeX Warning: Reference `lst:fw-init' on page 2 undefined on input line 8.
-
+)) [1] (./setup.tex
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 10.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 10.
@@ -1564,101 +1554,16 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )) [2] (./config.tex
-
-LaTeX Warning: Reference `app:fw-final' on page 3 undefined on input line 6.
-
 (./firewall-final.txt)) [3] (./correctness.tex) [4] (./discussion.tex) [5]
-(./conclusion.tex) [6]
-
-LaTeX Warning: Empty bibliography on input line 151.
-
-[7] (./init-config.tex
-
-LaTeX Warning: Reference `lst:fw-init-script' on page 8 undefined on input line
- 4.
-
-(./firewall-init.sh [8])) [9] (./final-config.tex
-
-LaTeX Warning: Reference `lst:fw-final-script' on page 10 undefined on input li
-ne 5.
-
-(./firewall-final.sh)) [10] (./answers.tex
-
-LaTeX Warning: Reference `fig:icmpexample' on page 11 undefined on input line 6
-.
-
-
+(./conclusion.tex) [6] [7] (./init-config.tex (./firewall-init.sh [8]))
+[9] (./final-config.tex (./firewall-final.sh [10])) [11] (./answers.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
 
-LaTeX Warning: Reference `fig:icmpexample' on page 11 undefined on input line 1
-4.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 9--16
 
- []
-
-Package epstopdf Info: Source file: <figures/icmpexample.eps>
-(epstopdf)                    date: 2014-03-13 18:10:50
-(epstopdf)                    size: 16350 bytes
-(epstopdf)             Output file: <figures/icmpexample-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=figures/icmpexample-eps-co
-nverted-to.pdf figures/icmpexample.eps>
-(epstopdf)             \includegraphics on input line 22.
-runsystem(repstopdf --outfile=figures/icmpexample-eps-converted-to.pdf figures/
-icmpexample.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/icmpexample-eps-converted-to.pdf>.
-
-
-! Package pdftex.def Error: File `figures/icmpexample-eps-converted-to.pdf' not
- found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22         }
-              
-? q
-OK, entering \batchmode...
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-\T1/cmr/m/n/9 (+20) Fig-ure to
- []
-
-Package epstopdf Info: Source file: <figures/icmpexample.eps>
-(epstopdf)                    date: 2014-03-13 18:10:50
-(epstopdf)                    size: 16350 bytes
-(epstopdf)             Output file: <figures/icmpexample-eps-converted-to.pdf>
-(epstopdf)             Command: <repstopdf --outfile=figures/icmpexample-eps-co
-nverted-to.pdf figures/icmpexample.eps>
-(epstopdf)             \includegraphics on input line 27.
-runsystem(repstopdf --outfile=figures/icmpexample-eps-converted-to.pdf figures/
-icmpexample.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figures/icmpexample-eps-converted-to.pdf>.
-
-
-! Package pdftex.def Error: File `figures/icmpexample-eps-converted-to.pdf' not
- found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27         }
-              
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-[]\T1/cmr/m/n/9 (+20) (b) Use
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
@@ -1684,34 +1589,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--166
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
- [11]
+[12]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (build/report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                report
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26576 strings out of 493488
- 470205 string characters out of 3125159
+ 26706 strings out of 493488
+ 472041 string characters out of 3125159
  1180174 words of memory out of 3000000
- 29233 multiletter control sequences out of 15000+200000
- 16865 words of font info for 56 fonts, out of 3000000 for 9000
+ 29256 multiletter control sequences out of 15000+200000
+ 18510 words of font info for 60 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  63i,9n,97p,875b,1937s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fon
@@ -1719,23 +1613,24 @@ ts/enc/dvips/cm-super/cm-super-t1.enc}</nfs4/merkurius.ita.chalmers.se/sw/unsup
 /texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></nfs
 4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type
 1/public/cm-super/sfbx1440.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texliv
-e-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sfit0900.pfb></nfs4/merku
+e-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></nfs4/merku
 rius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type1/publi
-c/cm-super/sfrm0600.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/
-texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></nfs4/merkurius.it
+c/cm-super/sfit0900.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/
+texlive/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></nfs4/merkurius.it
 a.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-su
-per/sfrm0900.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive
+per/sfrm0800.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive
 /texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></nfs4/merkurius.ita.chalm
 ers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sfr
 m1095.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-
 dist/fonts/type1/public/cm-super/sfrm2074.pfb></nfs4/merkurius.ita.chalmers.se/
-sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sftt0900.p
+sw/unsup/texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1095.p
 fb></nfs4/merkurius.ita.chalmers.se/sw/unsup/texlive-2012/texlive/texmf-dist/fo
-nts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/report.pdf (15 pages, 243682 bytes).
+nts/type1/public/cm-super/sftt0900.pfb></nfs4/merkurius.ita.chalmers.se/sw/unsu
+p/texlive-2012/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on build/report.pdf (16 pages, 272931 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 124 named destinations out of 1000 (max. 500000)
- 13837 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 432 PDF objects out of 1000 (max. 8388607)
+ 398 compressed objects within 4 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 18013 words of extra memory for PDF output out of 20736 (max. 10000000)
 

@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{entry}{none}
+    \entry{iptables-howto}{online}{}
+      \name{labelname}{1}{}{%
+        {{hash=bbdca53c492ce8ccdddee09b7907cb50}{Russell}{R\bibinitperiod}{Rusty}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bbdca53c492ce8ccdddee09b7907cb50}{Russell}{R\bibinitperiod}{Rusty}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bbdca53c492ce8ccdddee09b7907cb50}
+      \strng{fullhash}{bbdca53c492ce8ccdddee09b7907cb50}
+      \field{sortinit}{0}
+      \field{labeltitle}{{Linux 2.4 Packet Filtering HOWTO}}
+      \field{month}{06}
+      \field{title}{{Linux 2.4 Packet Filtering HOWTO}}
+      \field{year}{2002}
+      \verb{url}
+      \verb http://netfilter.org/documentation/HOWTO/packet-filtering-HOWTO.html
+      \endverb
+    \endentry
+    \entry{latex-wikibook}{misc}{}
+      \field{sortinit}{0}
+      \field{labeltitle}{LaTeX - Wikibooks, open books for an open world}
+      \field{title}{LaTeX - Wikibooks, open books for an open world}
+      \verb{url}
+      \verb http://en.wikibooks.org/wiki/LaTeX
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
