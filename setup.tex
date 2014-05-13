@@ -1,9 +1,12 @@
 \section{System Configuration and Requirements}
 \label{sec:setup}
 
-\todo{This section should include an explanation of the system configuration and the services which are running on the host. It should also include the security requirements (as stated in the lab PM).
+\inlinetodo{This section should include an explanation of the system configuration and the services which are running on the host. It should also include the security requirements (as stated in the lab PM).
 Make appropriate use of tables. For your convenience, an example table is given below, but its content may need to be updated.}
-At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}.
+
+
+
+At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}. The rules that are present are mainly for the file sharing protocol NFS which is used by all client hosts on chalmers network. Without these rules the hosts would not be able to communicate with the NFS server and thereby not be able to access files that are crucial for the system to run properly.  
 
 \lstinputlisting[caption=Initial firewall configuration,label=lst:fw-init]{firewall-init.txt}
 
