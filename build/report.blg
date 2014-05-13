@@ -1,14 +1,14 @@
 [0] Config.pm:361> INFO - This is Biber 1.5
-[0] Config.pm:364> INFO - Logfile is 'build/report.blg'
-[65] biber:193> INFO - === Tue May 13, 2014, 16:22:46
-[66] Biber.pm:327> INFO - Reading 'build/report.bcf'
-[121] Biber.pm:598> INFO - Using all citekeys in bib section 0
-[133] Biber.pm:2976> INFO - Processing section 0
-[142] Biber.pm:3086> INFO - Looking for bibtex format file 'report.bib' for section 0
-[145] bibtex.pm:889> INFO - Decoding LaTeX character macros into UTF-8
-[146] bibtex.pm:764> INFO - Found BibTeX data source 'report.bib'
-[179] Biber.pm:2860> INFO - Overriding locale 'en_US.utf8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[179] Biber.pm:2866> INFO - Sorting 'entry' list 'none' keys
-[180] Biber.pm:2870> INFO - No sort tailoring available for locale 'en_US.utf8'
-[195] bbl.pm:462> INFO - Writing 'build/report.bbl' with encoding 'UTF-8'
-[195] bbl.pm:535> INFO - Output to build/report.bbl
+[1] Config.pm:364> INFO - Logfile is 'build/report.blg'
+[70] biber:193> INFO - === Tue May 13, 2014, 17:05:22
+[71] Biber.pm:327> INFO - Reading 'build/report.bcf'
+[129] Biber.pm:598> INFO - Using all citekeys in bib section 0
+[142] Biber.pm:2976> INFO - Processing section 0
+[151] Biber.pm:3086> INFO - Looking for bibtex format file 'report.bib' for section 0
+[153] bibtex.pm:889> INFO - Decoding LaTeX character macros into UTF-8
+[153] bibtex.pm:764> INFO - Found BibTeX data source 'report.bib'
+[188] Biber.pm:2860> INFO - Overriding locale 'en_US.utf8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[188] Biber.pm:2866> INFO - Sorting 'entry' list 'none' keys
+[188] Biber.pm:2870> INFO - No sort tailoring available for locale 'en_US.utf8'
+[204] bbl.pm:462> INFO - Writing 'build/report.bbl' with encoding 'UTF-8'
+[204] bbl.pm:535> INFO - Output to build/report.bbl
