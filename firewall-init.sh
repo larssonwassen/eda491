@@ -6,11 +6,11 @@ MY_NETWORK="129.16.21.0/24"
 # Replace the ip address here with the ip address for your computer.
 # You can use the program "/sbin/ifconfig", or "/sbin/ip addr show"
 # to obtain the correct address.
-MY_HOST="129.16.21.XX" 
+MY_HOST="129.16.23.134" 
 
 # Network devices
-IN=eth0
-OUT=eth0
+IN=em1
+OUT=em1
 
 # Path to iptables, "/sbin/iptables"
 IPTABLES="sudo /sbin/iptables"
