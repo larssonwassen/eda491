@@ -1,14 +1,9 @@
 \section{System Configuration and Requirements}
 \label{sec:setup}
 
-\inlinetodo{
-This section should include an explanation of the system configuration and the services which are running on the host. It should also include the security requirements (as stated in the lab PM).
-Make appropriate use of tables. For your convenience, an example table is given below, but its content may need to be updated.
-}
+At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}. The rules that are present are mainly for the file sharing protocol NFS which is used by all client hosts on chalmers network. Without these rules the hosts would not be able to communicate with the NFS server and thereby not be able to access files that are crucial for the system to run properly. The other rules present, more specifically line number 2 and 3 in the INPUT chain and line number 1 and 2 in the FORWARD chain is there to drop invalid TCP packets. This is done to protect from for example so called xmas and TCP NULL scans and from other undefined behaviour when receiving invalid TCP packets.
 
-
-
-At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}. The rules that are present are mainly for the file sharing protocol NFS which is used by all client hosts on chalmers network. Without these rules the hosts would not be able to communicate with the NFS server and thereby not be able to access files that are crucial for the system to run properly. The other rules present, more specifically line number 2 and 3 in the INPUT chain and line number 1 and 2 in the FORWARD chain is there to drop invalid TCP packets. This is done to protect from for example so called xmas and TCP NULL scans and from other undefined behaviour when receiving invalid TCP packets.   
+One thing to note is that the defualt policy for all the chains is ACCEPT which means that if a packet dont match any firewall rule they will be accepted and all packets that we want to DROP we will have to make specific rules for. Generally from a security point of view we would say that this is a bad way to setup a firewall, on the other hand, from a functionality point of view it could be seen as good. As you will have to have rules for all packets that should be droped, which probably is many more than should be accepted, a system under heavy load will work slower with a default policy of ACCEPT than with DROP.  
 
 \lstinputlisting[caption=Initial firewall configuration,label=lst:fw-init]{firewall-init.txt}
 
