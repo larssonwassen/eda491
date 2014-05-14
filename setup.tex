@@ -8,7 +8,7 @@ Make appropriate use of tables. For your convenience, an example table is given 
 
 
 
-At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}. The rules that are present are mainly for the file sharing protocol NFS which is used by all client hosts on chalmers network. Without these rules the hosts would not be able to communicate with the NFS server and thereby not be able to access files that are crucial for the system to run properly. The other rules present, more specifically line number 2 and 3 in the INPUT chain and line number 1 and 2 in the FORWARD chain is there to drop invalid tcp packets. This is done to protect from for example a so called xmas scan and   
+At the begining of the lab a initial firewall configuration was in place to make the host work as intended when not used for this particular \lab. The configuration can be seen in Listing~\ref{lst:fw-init}. The rules that are present are mainly for the file sharing protocol NFS which is used by all client hosts on chalmers network. Without these rules the hosts would not be able to communicate with the NFS server and thereby not be able to access files that are crucial for the system to run properly. The other rules present, more specifically line number 2 and 3 in the INPUT chain and line number 1 and 2 in the FORWARD chain is there to drop invalid TCP packets. This is done to protect from for example so called xmas and TCP NULL scans and from other undefined behaviour when receiving invalid TCP packets.   
 
 \lstinputlisting[caption=Initial firewall configuration,label=lst:fw-init]{firewall-init.txt}
 
