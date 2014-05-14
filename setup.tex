@@ -5,5 +5,9 @@ At the begining of the lab a initial firewall configuration was in place to make
 
 One thing to note is that the defualt policy for all the chains is ACCEPT which means that if a packet dont match any firewall rule they will be accepted and all packets that we want to DROP we will have to make specific rules for. Generally from a security point of view we would say that this is a bad way to setup a firewall, on the other hand, from a functionality point of view it could be seen as good. As you will have to have rules for all packets that should be droped, which probably is many more than should be accepted, a system under heavy load will work slower with a default policy of ACCEPT than with DROP.  
 
+
+
+The firewall had three chains that could be monitored. The input chain consisted of the incomming traffic from the network interface, the output chain held the outgoining traffic from the host computer and the chain forward is used to route... If its source and destination are both other machines—it's being routed through the server—then it hits the FORWARD chain.
+
 \lstinputlisting[caption=Initial firewall configuration,label=lst:fw-init]{firewall-init.txt}
 
