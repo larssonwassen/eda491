@@ -1,1 +1,55 @@
-{output of iptables -vL --line-numbers}
+Chain INPUT (policy DROP 34 packets, 4847 bytes)      
+num   pkts bytes target     prot opt in     out     source               destination         
+1       42  7651 CTH        all  --  em1    any     cth-net.chalmers.se/16  anywhere            /* Fix NFS traffic */ 
+2        0     0 DROP       all  --  any    any     10.0.0.0/8           anywhere
+3        0     0 DROP       all  --  any    any     172.16.0.0/12        anywhere
+4        0     0 DROP       all  --  any    any     192.168.0.0/16       anywhere
+5        0     0 DROP       all  --  any    any     link-local/16        anywhere
+6        0     0 DROP       tcp  --  any    any     anywhere             anywhere            tcp flags:FIN,PSH,URG/FIN,PSH,URG
+7        0     0 DROP       tcp  --  any    any     anywhere             anywhere            tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+8        0     0 ACCEPT     icmp --  any    any     anywhere             anywhere            limit: avg 1/sec burst 5 icmp echo-request
+9        0     0 DROP       icmp --  any    any     anywhere             anywhere            icmp echo-request
+10       0     0 ACCEPT     all  --  any    any     anywhere             anywhere            state RELATED,ESTABLISHED
+11       0     0 ACCEPT     all  --  lo     any     anywhere             anywhere
+12       0     0 ACCEPT     udp  --  em1    any     anywhere             anywhere            udp dpt:ssh
+13       0     0 ACCEPT     tcp  --  em1    any     anywhere             anywhere            tcp dpt:ssh
+14       0     0 ACCEPT     udp  --  em1    any     anywhere             anywhere            udp dpt:webcache
+15       0     0 ACCEPT     tcp  --  em1    any     anywhere             anywhere            tcp dpt:webcache
+16       0     0 ACCEPT     udp  --  em1    any     anywhere             anywhere            udp dpt:sunrpc
+17       0     0 ACCEPT     tcp  --  em1    any     anywhere             anywhere            tcp dpt:sunrpc
+18      34  4847 LOG        all  --  any    any     anywhere             anywhere            LOG level warning
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1        0     0 DROP       tcp  --  any    any     anywhere             anywhere            tcp flags:FIN,PSH,URG/FIN,PSH,URG
+2        0     0 DROP       tcp  --  any    any     anywhere             anywhere            tcp flags:FIN,SYN,RST,PSH,ACK,URG/NONE
+3        0     0 LOG        all  --  any    any     anywhere             anywhere            LOG level warning
+
+Chain OUTPUT (policy DROP 0 packets, 0 bytes)
+num   pkts bytes target     prot opt in     out     source               destination
+1       12  2544 ACCEPT     all  --  any    em1     anywhere             cth-net.chalmers.se/16
+2        0     0 DROP       all  --  any    any     10.0.0.0/8           10.0.0.0/8
+3        0     0 DROP       all  --  any    any     10.0.0.0/8           172.16.0.0/12
+4        0     0 DROP       all  --  any    any     10.0.0.0/8           192.168.0.0/16
+5        0     0 DROP       all  --  any    any     10.0.0.0/8           link-local/16
+6        0     0 DROP       all  --  any    any     172.16.0.0/12        10.0.0.0/8
+7        0     0 DROP       all  --  any    any     172.16.0.0/12        172.16.0.0/12
+8        0     0 DROP       all  --  any    any     172.16.0.0/12        192.168.0.0/16
+9        0     0 DROP       all  --  any    any     172.16.0.0/12        link-local/16
+10       0     0 DROP       all  --  any    any     192.168.0.0/16       10.0.0.0/8
+11       0     0 DROP       all  --  any    any     192.168.0.0/16       172.16.0.0/12
+12       0     0 DROP       all  --  any    any     192.168.0.0/16       192.168.0.0/16
+13       0     0 DROP       all  --  any    any     192.168.0.0/16       link-local/16
+14       0     0 DROP       all  --  any    any     link-local/16        10.0.0.0/8
+15       0     0 DROP       all  --  any    any     link-local/16        172.16.0.0/12
+16       0     0 DROP       all  --  any    any     link-local/16        192.168.0.0/16
+17       0     0 DROP       all  --  any    any     link-local/16        link-local/16
+18       0     0 ACCEPT     all  --  any    lo      anywhere             anywhere
+19       0     0 ACCEPT     all  --  any    em1     anywhere             anywhere
+20       0     0 LOG        all  --  any    any     anywhere             anywhere            LOG level warning
+
+Chain CTH (1 references)
+num   pkts bytes target     prot opt in     out     source               destination
+1        0     0 ACCEPT     all  --  any    any     soleil.ce.chalmers.se  anywhere            state RELATED,ESTABLISHED /* NFS server soleil */
+2       34  4847 RETURN     all  --  any    any     cth20a-nw.chalmers.se/22  anywhere            /* Dont look at CE */
+3        8  2804 ACCEPT     all  --  any    any     anywhere             anywhere            state RELATED,ESTABLISHED /* Allow the rest to Chalmers */
