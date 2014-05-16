@@ -14,10 +14,10 @@ achieved in Q1? Use Figure~\ref{fig:icmpexample} to illustrate the path of
 the packets. Mark the path with arrows and use an X to mark the point where the
 packets are DROPped.}
 
-The same thing happend here, the ping requests got sent without any problems but 
+The same thing happened here, the ping requests got sent without any problems but 
 no answers were received. The difference in this case from the previous is that
 when dropping the packets on the input the packet never reaches the 
-icmp server and thereby needs less processing than in the case were it is dropped
+ICMP server and thereby needs less processing than in the case were it is dropped
 on the output. This could be seen by the fact that when dropping on the input it 
 is the request that is dropped while as when dropping on the output it is the 
 generated response that is dropped.
@@ -52,9 +52,9 @@ Not applicable. The logging did not work for anyone during the lab. File permiss
 \noindent \textbf{Q4. At this stage, with default policy set to DROP for all 
 chains, would you consider the system secure? Would you consider it useful?}
 
-The system is most certainly secure but not usefull. If no traffic att all will
-be let through the only security holes would be if there is any implementation 
-bugs in the firwall. Other attacks like DoS will allso work. 
+The system is most certainly secure but not useful. If no traffic at all will
+be let through the only security holes would be if there are any implementation 
+bugs in the firewall. Other attacks like DoS will also work. 
 \\
 
 \noindent \textbf{Q5. Assume instead that you used default policy ACCEPT, 
@@ -63,13 +63,13 @@ would you consider the system secure now? Would you consider it useful?}
 With a policy of ACCEPT and no other rules everything will work without interference
 from the firewall. This would be the same as turning the firewall off. If you add
 the appropriate rules the system could be made just as secure as with policy DROP but
-this aproach is much more prone to human error.
+this approach is much more prone to human error.
 \\
 
 \noindent \textbf{Q6. You just added some protection against flooding by 
 limiting the number of packets the firewall will let through to 1 per second. 
 Give two examples on how you can tell that you are protected!}
 
-By sending a ping storm from another host and se that our host only responds to 1 per 
-second. We can also use wireshark on the host an see that the host only handles 1 
+By sending a ping storm from another host and see that our host only responds to 1 per 
+second. We can also use Wireshark on the host an see that the host only handles 1 
 ping per second.
